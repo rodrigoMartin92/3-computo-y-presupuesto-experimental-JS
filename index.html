@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Css -->
+    <link rel="stylesheet" href="Css.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <h2>Programa de computo y presupuesto</h2>
+    <div>
+        
+        <div>
+            <div class="-W49 -bgcAzul -displayInlineBlock -floatLeft">
+    
+                <!-- IMPUTS -->
+    
+                <h3>Valores</h3>
+                <div>
+                    
+                    <p>Introduzca el nombre del material</p>
+                    <input type="text" placeholder="Nombre del material..." id="idNombreDelMaterial">
+    
+                    <p>Introduzca la cantidad de material (Kg, m2, m3, etc.)</p>
+                    <input type="text" placeholder="Cantidad del material..." id="idCantidadDelMaterial">
+    
+                    <p>Introduzca el precio unitario del material</p>
+                    <input type="text" placeholder="Precio del material..." id="idPrecioDelMaterial">
+    
+                </div>
+    
+                <!-- BUTTONS -->
+    
+                <div>
+                    <button class="-boton1 -displayInlineBlock -W10" id="idbtnComputo">Computar</button>
+                </div>
+                <div>
+                    <button class="-boton1 -displayInlineBlock -W10" id="idbtnReinicio">Reiniciar</button>
+                </div>
+                <div>
+                    <button class="-boton1 -displayInlineBlock -W10" id="idbtnBorrarUltimo">Borrar ultimo</button>
+                </div>
+                <div>
+                    <button class="-boton1 -displayInlineBlock -W10" id="idBorrarElemento">Borrar elemento Nº:</button>
+                    <input id="idInputBorrarElemento" type="number">
+                </div>
+            </div>
+    
+            <!-- LISTAS -->
+    
+            <div class="-W49  -displayInlineBlock -floatLeft">
+                
+                <div class="-bgcRojo">
+                    <div class="-W10 -displayInlineBlock ">
+                        <h3>Nº</h3>
+                    </div>
+                    <div class="-W30 -displayInlineBlock ">
+                        <h3>Lista de materiales</h3>
+                    </div>
+                    <div class="-W30 -displayInlineBlock">
+                        <h3>Sumatoria de materiales computados</h3>
+                    </div>
+                    <div class="-W30 -displayInlineBlock">
+                        <h3>Total de materiales computados</h3>
+                    </div>
+                </div>
+
+                <div class="-bgcVerde">
+                    <div class="-W10 -displayInlineBlock">
+                        <p id="idNumeroDeMateriales">....</p>
+                    </div>
+                    <div class="-W30 -displayInlineBlock">
+                        <p id="idlistaDeMateriales">...........</p>
+                    </div>
+                    <div class="-W30 -displayInlineBlock">
+                        <p id="idsumatoriaDeComputados">...........</p>
+                    </div>
+                    <div class="-W30 -displayInlineBlock">
+                        <p id="idtotalDeComputados">...........</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="-bgcMarron -">
+                    <div class="-displayInlineBlock">
+                        <p id="idarrayCompleto1">¿Array?...............</p>
+                    </div>
+                </div>
+                
+                <div class="-bgcCeleste">
+                    <div class="-W10 -displayInlineBlock">
+                        <p id="idarrayNumeroMaterial">...</p>
+                    </div>
+                    <div class="-W30 -displayInlineBlock">
+                        <p id="idarrayNombreMaterial">.....</p>
+                    </div>
+                    <div class="-W30 -displayInlineBlock">
+                        <p id="idarrayCantidadMaterial">.....</p>
+                    </div>
+                    <div class="-W30 -displayInlineBlock">
+                        <p id="idarrayPrecioMaterial">.....</p>
+                    </div>
+                </div>
+    
+            </div>
+
+    </div>
+
+    <!-- JS --> 
+    <script src="JS.js"></script>
+
+</html>
