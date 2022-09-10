@@ -4,44 +4,44 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    margin: 5px;
-    padding: 5px;
-    border: #000 solid 1px;
+
+body {
+    background-color: #338;
 }
-/* PROPIEDADES CAJAS */
-.-displayInlineBlock{
-    display: inline-block;
+
+.MAIN1 {
+    margin: 0 2%;
+    background-color: #eee;
 }
-.-W10{
-    width: 10%;
-}
-.-W30{
-    width: 30%;
-}
-.-W49{
-    width: 49%;
-}
-.-floatLeft{
-    float: left;
-}
+
 /* PROPIEDADES BOTONES */
-.-boton1{
+.BTN1 {
+    width: 100%;
     padding: 10px;
+    margin: 10px;
 }
+
 /* COLORES CAJAS */
-.-bgcAzul{
+.mTopBot {
+    margin: 10px 0;
+}
+
+.BGCAzul {
     background-color: #00f3;
 }
-.-bgcVerde{
+
+.BGCVerde {
     background-color: #0f03;
 }
-.-bgcRojo{
+
+.BGCRojo {
     background-color: #f003;
 }
-.-bgcMarron{
+
+.BGCMarron {
     background-color: #ff03;
 }
-.-bgcCeleste{
+
+.BGCCeleste {
     background-color: #0ff3;
 }

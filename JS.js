@@ -3,7 +3,7 @@
 var cantidadXprecio = 0
 var totalDeComputados = 0
 
-var arrayNombreCantidadPrecio = [1,2,3];
+var arrayNombreCantidadPrecio = [1, 2, 3];
 
 /* VARIABLES DE LISTA */
 
@@ -16,18 +16,18 @@ botonComputo.addEventListener('click', recopilarDatos)
 
 /* FUNCIONES */
 
-function recopilarDatos(){
+function recopilarDatos() {
     var nomMat = document.querySelector('#idNombreDelMaterial').value
     var cantMat = document.querySelector('#idCantidadDelMaterial').value
     var precioMat = document.querySelector('#idPrecioDelMaterial').value
 
-    computar(nomMat, cantMat, precioMat)    
+    computar(nomMat, cantMat, precioMat)
     trabajarArray(nomMat, cantMat, precioMat)
     trabajarElementosArray(nomMat, cantMat, precioMat)
 
 }
 
-function computar(v1,v2,v3){
+function computar(v1, v2, v3) {
     // Toma de elementos
     var listaMat = document.querySelector('#idlistaDeMateriales')
     var sumMat = document.querySelector('#idsumatoriaDeComputados')
@@ -48,7 +48,7 @@ function computar(v1,v2,v3){
     totMat.innerHTML = listaTotalComputados
 }
 
-function trabajarArray(V1,V2,V3){
+function trabajarArray(V1, V2, V3) {
     //Toma de elementos
     var arrayCompleto1 = document.querySelector('#idarrayCompleto1')
 
@@ -58,12 +58,12 @@ function trabajarArray(V1,V2,V3){
     arrayCompleto1.innerHTML = arrayNombreCantidadPrecio
 
 }
-function trabajarElementosArray(V1,V2,V3){
+function trabajarElementosArray(V1, V2, V3) {
     //Toma de elementos
 
     // Cálculos internos
 
-    arrayNombreCantidadPrecio.push([V1,V2,V3]);
+    arrayNombreCantidadPrecio.push([V1, V2, V3]);
 
     //valores en pantalla
     console.log(JSON.stringify(arrayNombreCantidadPrecio))

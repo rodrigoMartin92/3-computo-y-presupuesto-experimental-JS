@@ -1,117 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Document</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!-- Css -->
     <link rel="stylesheet" href="Css.css">
-
-    <title>Document</title>
 </head>
+
 <body>
-    <h2>Programa de computo y presupuesto</h2>
-    <div>
-        
-        <div>
-            <div class="-W49 -bgcAzul -displayInlineBlock -floatLeft">
-    
-                <!-- IMPUTS -->
-    
-                <h3>Valores</h3>
-                <div>
-                    
+    <div class="MAIN1">
+        <div class="container">
+            <h2>Programa de computo y presupuesto</h2>
+            <div class="row">
+                <div class="col">
+                    <h3> Valores</h3>
                     <p>Introduzca el nombre del material</p>
                     <input type="text" placeholder="Nombre del material..." id="idNombreDelMaterial">
-    
+
                     <p>Introduzca la cantidad de material (Kg, m2, m3, etc.)</p>
                     <input type="text" placeholder="Cantidad del material..." id="idCantidadDelMaterial">
-    
+
                     <p>Introduzca el precio unitario del material</p>
                     <input type="text" placeholder="Precio del material..." id="idPrecioDelMaterial">
-    
-                </div>
-    
-                <!-- BUTTONS -->
-    
-                <div>
-                    <button class="-boton1 -displayInlineBlock -W10" id="idbtnComputo">Computar</button>
-                </div>
-                <div>
-                    <button class="-boton1 -displayInlineBlock -W10" id="idbtnReinicio">Reiniciar</button>
-                </div>
-                <div>
-                    <button class="-boton1 -displayInlineBlock -W10" id="idbtnBorrarUltimo">Borrar ultimo</button>
-                </div>
-                <div>
-                    <button class="-boton1 -displayInlineBlock -W10" id="idBorrarElemento">Borrar elemento Nº:</button>
-                    <input id="idInputBorrarElemento" type="number">
                 </div>
             </div>
-    
-            <!-- LISTAS -->
-    
-            <div class="-W49  -displayInlineBlock -floatLeft">
-                
-                <div class="-bgcRojo">
-                    <div class="-W10 -displayInlineBlock ">
-                        <h3>Nº</h3>
+            <div class="row">
+                <div class="col">
+                    <div>
+                        <button class="BTN1" id="idbtnComputo">Computar</button>
                     </div>
-                    <div class="-W30 -displayInlineBlock ">
-                        <h3>Lista de materiales</h3>
+                    <div>
+                        <button class="BTN1" id="idbtnReinicio">Reiniciar</button>
                     </div>
-                    <div class="-W30 -displayInlineBlock">
-                        <h3>Sumatoria de materiales computados</h3>
+                    <div>
+                        <button class="BTN1 " id="idbtnBorrarUltimo">Borrar ultimo</button>
                     </div>
-                    <div class="-W30 -displayInlineBlock">
-                        <h3>Total de materiales computados</h3>
+                    <div>
+                        <button class="BTN1" id="idBorrarElemento">Borrar elemento
+                            Nº:</button>
+                        <input id="idInputBorrarElemento" type="number">
                     </div>
                 </div>
-
-                <div class="-bgcVerde">
-                    <div class="-W10 -displayInlineBlock">
-                        <p id="idNumeroDeMateriales">....</p>
-                    </div>
-                    <div class="-W30 -displayInlineBlock">
-                        <p id="idlistaDeMateriales">...........</p>
-                    </div>
-                    <div class="-W30 -displayInlineBlock">
-                        <p id="idsumatoriaDeComputados">...........</p>
-                    </div>
-                    <div class="-W30 -displayInlineBlock">
-                        <p id="idtotalDeComputados">...........</p>
-                    </div>
-                </div>
-
-                <br>
-
-                <div class="-bgcMarron -">
-                    <div class="-displayInlineBlock">
-                        <p id="idarrayCompleto1">¿Array?...............</p>
-                    </div>
-                </div>
-                
-                <div class="-bgcCeleste">
-                    <div class="-W10 -displayInlineBlock">
-                        <p id="idarrayNumeroMaterial">...</p>
-                    </div>
-                    <div class="-W30 -displayInlineBlock">
-                        <p id="idarrayNombreMaterial">.....</p>
-                    </div>
-                    <div class="-W30 -displayInlineBlock">
-                        <p id="idarrayCantidadMaterial">.....</p>
-                    </div>
-                    <div class="-W30 -displayInlineBlock">
-                        <p id="idarrayPrecioMaterial">.....</p>
-                    </div>
-                </div>
-    
             </div>
+        </div>
+        <!-- LISTAS -->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="mTopBot BGCRojo">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-1">
+                                    <p>Nº</p>
+                                </div>
+                                <div class="col">
+                                    <p>Lista de materiales</p>
+                                </div>
+                                <div class="col">
+                                    <p>Sumatoria de materiales computados</p>
+                                </div>
+                                <div class="col">
+                                    <p>Total de materiales computados</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mTopBot BGCVerde">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-1">
+                                    <p id="idNumeroDeMateriales">....</p>
+                                </div>
+                                <div class="col">
+                                    <p id="idlistaDeMateriales">...........</p>
+                                </div>
+                                <div class="col">
+                                    <p id="idsumatoriaDeComputados">...........</p>
+                                </div>
+                                <div class="col">
+                                    <p id="idtotalDeComputados">...........</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mTopBot BGCMarron">
+                        <div class="">
+                            <p id=" idarrayCompleto1">¿Array?...............</p>
+                        </div>
+                    </div>
+                    <div class="mTopBot BGCCeleste">
+                        <div class="">
+                            <p id=" idarrayNumeroMaterial">...</p>
+                        </div>
+                        <div class="">
+                            <p id="idarrayNombreMaterial">.....</p>
+                        </div>
+                        <div class="">
+                            <p id="idarrayCantidadMaterial">.....</p>
+                        </div>
+                        <div class="">
+                            <p id="idarrayPrecioMaterial">.....</p>
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+        </div>
     </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 
-    <!-- JS --> 
+    <!-- JS -->
     <script src="JS.js"></script>
 
 </html>
